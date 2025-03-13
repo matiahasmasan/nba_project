@@ -9,7 +9,7 @@ async function fetchFromNbaApi() {
     updateLastRefreshed();
 
     const response = await fetch(
-      "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json"
+      "http://localhost:3000/nba-scoreboard"
     );
 
     if (!response.ok) {
